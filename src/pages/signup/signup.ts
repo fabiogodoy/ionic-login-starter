@@ -1,20 +1,15 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the SignupPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+import { AppTranslationModule } from '../../app/app.translation.module';
 
 @Component({
   selector: 'page-signup',
   templateUrl: 'signup.html',
+  providers:[AppTranslationModule]
 })
 export class SignupPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public translate: AppTranslationModule) {
   }
 
   ionViewDidLoad() {

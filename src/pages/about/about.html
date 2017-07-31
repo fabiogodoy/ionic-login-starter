@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      {{ 'ABOUT.TITLE' | translate }}
     </ion-title>
     <ion-buttons end>
       <button ion-button icon-only color="royal" (click)="logout()">
@@ -13,6 +13,6 @@
 
 <ion-content padding>
   <div class="center">
-    <h3>It is unbelievable what this app can do for you, we hope you enjoy!</h3>
+    <h3>{{ 'ABOUT.MESSAGE' | translate }}</h3>
   </div>
 </ion-content>

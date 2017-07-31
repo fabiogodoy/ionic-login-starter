@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      {{ 'CONTACT.TITLE' | translate }}
     </ion-title>
     <ion-buttons end>
       <button ion-button icon-only color="royal" (click)="logout()">
@@ -13,10 +13,10 @@
 
 <ion-content>
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
+    <ion-list-header>{{ 'CONTACT.MESSAGE' | translate }}</ion-list-header>
     <ion-item>
       <ion-icon name="logo-twitter" item-left></ion-icon>
-      @fabiorgodoy
+      {{ 'CONTACT.TWITTER' | translate }}
     </ion-item>
   </ion-list>
 </ion-content>
